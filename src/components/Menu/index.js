@@ -1,20 +1,21 @@
 import React from 'react'
 import "./Menu.css"
+import { Link } from 'react-router-dom'
 import RaflixLogo from '../../assets/image/raflix-logo.png'
-import ButtonLink from './components/ButtonLink'
+//import ButtonLink from './components/ButtonLink'
+import Button from '../Button'
 
 export default function Menu(){
     return(
         <nav className="Menu">
-            <a href="/">
+            <Link href="/">
                 <img className="Logo" src={RaflixLogo} alt="Raflix Logo"/>
-            </a>
+            </Link>
 
-            <ButtonLink href="/" className="ButtonLink">
+            <Button as={Link} to="/cadastro/video" className="ButtonLink">
                 Novo vídeo
-            </ButtonLink>
+            </Button>
             
-
         </nav>
     )
 }
