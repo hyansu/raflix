@@ -8,7 +8,7 @@ import Button from '../Button'
 export default function Menu(){
     return(
         <nav className="Menu">
-            <Link href="/">
+            <Link to="/">
                 <img className="Logo" src={RaflixLogo} alt="Raflix Logo"/>
             </Link>
 
